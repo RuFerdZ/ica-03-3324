@@ -2,7 +2,7 @@ db:
   name: wp-database
   labels:
     id: c0918066
-    app: wp-database
+    app: wp-database-app
     env: wordpress
   image:
     repository: mariadb
