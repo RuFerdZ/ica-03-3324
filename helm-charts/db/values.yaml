@@ -3,14 +3,13 @@ db:
   labels:
     id: c0918066
     app: wp-database-app
-    env: wordpress
+    env: dev
   image:
     repository: mariadb
     tag: "10.6.4-focal"
     pullPolicy: IfNotPresent
   replicas: 1
   configmap:
-    ## KEY: "value"
     MYSQL_DATABASE: wordpress
     MYSQL_USER: wordpress
     APP_ENV: dev
